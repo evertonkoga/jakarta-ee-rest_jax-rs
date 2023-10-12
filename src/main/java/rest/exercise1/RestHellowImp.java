@@ -7,13 +7,13 @@ import jakarta.ws.rs.core.MediaType;
 
 import java.util.Date;
 
-@Path("/ola")
+@Path("/hellow")
 public class RestHellowImp implements Hellow {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String servico() {
-        System.out.println("Executou o rest...");
+        System.out.println("Executed the rest...");
         return new Date().toString();
     }
 }

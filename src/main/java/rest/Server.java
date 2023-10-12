@@ -8,13 +8,18 @@ import java.net.URI;
 import java.util.Scanner;
 
 public class Server {
+    /**
+     *  To access API documentation, access http://localhost:8080/application.wadl
+     */
     public static void main(String[] args) {
         var serverBaseUrl = "http://localhost/";
         var serverPort = 8080;
         var packageBasePath = "rest.exercise";
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input the exercise number:");
         String exerciseNumber = scanner.nextLine();
+
         try {
             URI uri = UriBuilder.fromUri(serverBaseUrl).port(serverPort).build();
 
