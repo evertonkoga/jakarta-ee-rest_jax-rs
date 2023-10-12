@@ -30,7 +30,7 @@
 
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-jackson</artifactId>
+            <artifactId>jersey-media-jaxb</artifactId>
             <version>${jersey}</version>
         </dependency>
 
