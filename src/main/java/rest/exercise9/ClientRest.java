@@ -10,7 +10,7 @@ import jakarta.ws.rs.core.Response;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class RestClient {
+public class ClientRest {
 
     private static WebTarget create() {
         Client client = ClientBuilder.newClient();
