@@ -12,10 +12,12 @@ import java.util.zip.GZIPOutputStream;
 public class GzipServer implements WriterInterceptor {
     @Override
     public void aroundWriteTo(WriterInterceptorContext context) throws IOException, WebApplicationException {
-        System.out.println("Call Interceptor");
+        System.out.println("Call Interceptor Server");
+
         GZIPOutputStream outputStream = new GZIPOutputStream(context.getOutputStream());
         context.setOutputStream(outputStream);
         context.proceed();
+
         return;
     }
 }
