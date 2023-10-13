@@ -11,6 +11,9 @@
 </center>
 <br />
 
+> [!NOTE]
+> Link do curso: https://www.udemy.com/course/java-ee-rest-com-jax-rs
+
 ## Ferramentas utilizadas
 
 - JDK 17
@@ -39,3 +42,6 @@ Server URL: http://localhost:8080
 ### Acesse a API via Client Jersey
 
 Após executar o passo anterior, basta execute o método `main()` na classe **ClientRest** de cada exercício que esteja testando, caso exista.
+
+## Links úteis
+Curso: https://www.udemy.com/course/java-ee-rest-com-jax-rs/
