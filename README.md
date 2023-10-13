@@ -12,7 +12,7 @@
 <br />
 
 > [!NOTE]
-> Link do curso: https://www.udemy.com/course/java-ee-rest-com-jax-rs
+> Link do curso: [Jakarta EE REST com JAX-RS](https://www.udemy.com/course/java-ee-rest-com-jax-rs)
 
 ## Ferramentas utilizadas
 
