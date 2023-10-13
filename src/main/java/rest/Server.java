@@ -12,7 +12,7 @@ public class Server {
      *  To access API documentation, access http://localhost:8080/application.wadl
      */
     public static void main(String[] args) {
-        var serverBaseUrl = "http://localhost/";
+        var serverBaseURL = "http://localhost";
         var serverPort = 8080;
         var packageBasePath = "rest.exercise";
 
@@ -21,7 +21,7 @@ public class Server {
         String exerciseNumber = scanner.nextLine();
 
         try {
-            URI uri = UriBuilder.fromUri(serverBaseUrl).port(serverPort).build();
+            URI uri = UriBuilder.fromUri(serverBaseURL).port(serverPort).build();
 
             ResourceConfig config = new ResourceConfig();
             config.packages(packageBasePath + exerciseNumber);
@@ -29,6 +29,7 @@ public class Server {
             GrizzlyHttpServerFactory.createHttpServer(uri, config);
 
             System.out.println("Server is started...");
+            System.out.println("Server URL: " + serverBaseURL + ":" + serverPort);
         } catch (Exception e) {
             e.printStackTrace();
         }
